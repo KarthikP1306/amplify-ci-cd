@@ -123,7 +123,6 @@ class App extends Component {
           // or rather lets just show a sign out button for now.. sigh.
           authState === 'signedIn' ? 
           (
-            <h1>We now have Auth-kp !!!</h1>
             <div class='signout'>
               <button onClick={this.signOut}>Sign out of application {user_givenname} {user_email}</button>
             </div>
