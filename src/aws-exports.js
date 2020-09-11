@@ -7,7 +7,18 @@ const awsmobile = {
     "aws_cognito_region": "eu-west-1",
     "aws_user_pools_id": "eu-west-1_wo0TqOIKU",
     "aws_user_pools_web_client_id": "1u5kne62cnbs35nrrbj0769gku",
-    "oauth": {}
+    "oauth": {
+        "domain": "amplify-app.auth.eu-west-1.amazoncognito.com",
+        "scope": [
+            "email",
+            "openid",
+            "aws.cognito.signin.user.admin"
+        ],
+        "redirectSignIn": "https://master.dj464q5nsb6u9.amplifyapp.com/",
+        "redirectSignOut": "https://master.dj464q5nsb6u9.amplifyapp.com/",
+        "responseType": "token",
+        "client_id": "tp05f01r71u8666c0jimnj779"
+    }
 };
 
 
