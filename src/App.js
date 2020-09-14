@@ -128,7 +128,7 @@ class App extends Component {
           (
             <div class='signout'>
               <div>hello</div>
-              <button onClick={this.signOut}>Sign out of application {user_givenname} {user_email}</button>
+              <button onClick={this.signOut}>Sign out of application</button>
             </div>
           ) : null
         }
