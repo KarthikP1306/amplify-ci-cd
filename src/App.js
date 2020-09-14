@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import Amplify, {Auth, Hub} from 'aws-amplify';
 import awsmobile from './aws-exports'; // Amplify configuration
 import { I18n, ConsoleLogger as Logger } from '@aws-amplify/core';
+import logo from './kana.jpg';
 // from files:
 import OAuthButton from './OAuthButton'; // Our login button "aka form" for now
 import './App.css'; // Custom Style Sheet
@@ -114,8 +115,14 @@ class App extends Component {
         }
         {
           // if authState is set to signIn then show the login page with the single button for O365 javascript redirect
-          authState === 'signIn' && <OAuthButton/>
-        }
+          authState === 'signIn' ?
+           (
+             <div>
+              <img src={logo}  alt="logo"></img>
+              <OAuthButton></OAuthButton>
+              </div> 
+           ) : null
+          }
         {
           // if authState is signedIn then we've got a logged in user - lets start our app up!
           // or rather lets just show a sign out button for now.. sigh.
