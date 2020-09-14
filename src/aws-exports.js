@@ -12,7 +12,8 @@ const awsmobile = {
         "scope": [
             "email",
             "openid",
-            "aws.cognito.signin.user.admin"
+            "aws.cognito.signin.user.admin",
+            "profile"
         ],
         "redirectSignIn": "https://master.dj464q5nsb6u9.amplifyapp.com/",
         "redirectSignOut": "https://master.dj464q5nsb6u9.amplifyapp.com/",

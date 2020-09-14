@@ -1,10 +1,3 @@
-/* ===================================================
-  App.js : Core App.JS with Azure AD integrated authentication
-  Author: Zenstorm
-  Date: 10/05/2019
-  Version: 1.00
-*/
-
 // ===================================================
 // Imports
 // from libraries:
