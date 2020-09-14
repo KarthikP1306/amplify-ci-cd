@@ -3,10 +3,12 @@
 
 const awsmobile = {
     "aws_project_region": "eu-west-1",
+    "aws_cognito_identity_pool_id": "eu-west-1:9348ce9c-9ba5-4700-9f82-4ef0eb6cd108",
     "aws_cognito_region": "eu-west-1",
-    "aws_user_pools_id": "eu-west-1_YrTFT7ioU",
+    "aws_user_pools_id": "eu-west-1_BQWwmmbqq",
+    "aws_user_pools_web_client_id": "o481h2rm0s5atukkfqij8mobs",
     "oauth": {
-        "domain": "kpamplify.auth.eu-west-1.amazoncognito.com",
+        "domain": "ampkarthi.auth.eu-west-1.amazoncognito.com",
         "scope": [
             "email",
             "openid",
@@ -15,7 +17,7 @@ const awsmobile = {
         "redirectSignIn": "https://master.dj464q5nsb6u9.amplifyapp.com/",
         "redirectSignOut": "https://master.dj464q5nsb6u9.amplifyapp.com/",
         "responseType": "token",
-        "client_id": "7q7b07hv878lo6vp8qma7oclqj"
+        "client_id": "4gd8fs90pmgr5fvlb48u996dsg"
     }
 };
 
