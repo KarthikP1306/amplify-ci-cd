@@ -102,9 +102,9 @@ class App extends Component {
   render() {
     // vars for fun - should be buried in app
     const { authState } = this.state;
-    /* const { token } = this.state;
+    const { token } = this.state;
     const { user_givenname } = this.state;
-    const { user_email } = this.state; */
+    const { user_email } = this.state;
 
     // main return routine
     return (
@@ -120,16 +120,16 @@ class App extends Component {
              <div>
               <img src={logo}  alt="logo"></img>
               <OAuthButton></OAuthButton>
-              </div> 
+              </div>
            ) : null
           }
         {
           // if authState is signedIn then we've got a logged in user - lets start our app up!
           // or rather lets just show a sign out button for now.. sigh.
-          authState === 'signedIn' ? 
+          authState === 'signedIn' ?
           (
             <div class='signout'>
-              <div>hello</div>
+              <div>hello { user_givenname }</div>
               <button onClick={this.signOut}>Sign out of application</button>
             </div>
           ) : null
