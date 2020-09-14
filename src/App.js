@@ -49,7 +49,8 @@ class App extends Component {
     const user = await Auth.currentAuthenticatedUser();
     
     // do a debug log entry
-    logger.debug(user);
+    console.log("user details " + user)
+    //logger.debug(user);
 
     // setup some variables out of our current user object
     const token = user.signInUserSession.idToken.jwtToken;
@@ -74,10 +75,12 @@ class App extends Component {
       switch (event) {
         case "signIn":
           this.setState({ authState: 'signedIn'});
+          console.log("signedin")
           this.getuserinfo();
           break;
         case "signOut":
           this.setState({ authState: 'signIn'});
+          console.log("signout")
           this.setState({ user: null });
           break;
       }
@@ -103,9 +106,9 @@ class App extends Component {
   render() {
     // vars for fun - should be buried in app
     const { authState } = this.state;
-    const { token } = this.state;
+    /* const { token } = this.state;
     const { user_givenname } = this.state;
-    const { user_email } = this.state;
+    const { user_email } = this.state; */
 
     // main return routine
     return (
