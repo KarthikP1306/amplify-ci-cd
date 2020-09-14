@@ -49,7 +49,9 @@ class App extends Component {
     const user = await Auth.currentAuthenticatedUser();
     
     // do a debug log entry
-    console.log("user details " + user)
+    console.log("user details name " + user)
+    console.log("user details name name " + user.attributes.name)
+    console.log("user details name email " + user.attributes.email)
     //logger.debug(user);
 
     // setup some variables out of our current user object
