@@ -127,6 +127,7 @@ class App extends Component {
           authState === 'signedIn' ? 
           (
             <div class='signout'>
+              <div>hello</div>
               <button onClick={this.signOut}>Sign out of application {user_givenname} {user_email}</button>
             </div>
           ) : null
