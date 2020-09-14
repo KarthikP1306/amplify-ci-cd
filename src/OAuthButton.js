@@ -11,7 +11,7 @@ class OAuthButton extends React.Component {
   render() {
     return (
       <div class='login'>
-        <button onClick={this.handleClick}>Log back into application with O365</button>
+        <button onClick={this.handleClick}>Log into application</button>
       </div>
     )
   }
