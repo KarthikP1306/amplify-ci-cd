@@ -87,9 +87,9 @@ class App extends Component {
   // signOut() : used to sign out user
   // custom sign out function; has been bound in constructor(props) as well
   signOut() {
-    Auth.signOut()
+    Auth.signOut({global: true})
       .then(() => {
-        this.setState({ authState: 'signIn'});
+        this.setState({ authState: null});
         this.setState({ user: null });
       })
       .catch(err => {
